@@ -10,7 +10,7 @@ export default function StatsSection({ stats }) {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-bold text-center mb-16 text-purple-300"
+          className="text-4xl md:text-6xl font-bold text-center mb-16 text-purple-300 font-mono"
         >
           My Stats
         </motion.h2>
@@ -39,11 +39,11 @@ export default function StatsSection({ stats }) {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 0.5 }}
                   viewport={{ once: true }}
-                  className="text-3xl font-bold text-white mb-2"
+                  className="text-3xl font-bold text-white mb-2 font-mono"
                 >
                   {stat.value}+
                 </motion.div>
-                <div className="text-gray-300">{stat.label}</div>
+                <div className="text-gray-300 font-mono">{stat.label}</div>
               </div>
             </motion.div>
           ))}
@@ -57,7 +57,7 @@ export default function StatsSection({ stats }) {
           viewport={{ once: true }}
           className="bg-black/40 backdrop-blur-sm rounded-lg p-6 border border-purple-300/20"
         >
-          <h3 className="text-xl font-bold mb-4 text-center text-purple-200">
+          <h3 className="text-xl font-bold mb-4 text-center text-purple-200 font-mono">
             Coding Activity
           </h3>
           <div className="grid grid-cols-12 gap-1">

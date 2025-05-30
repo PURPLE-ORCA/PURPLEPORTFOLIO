@@ -17,7 +17,7 @@ export default function ContactSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="text-4xl md:text-6xl font-bold text-center mb-16 text-purple-300"
+        className="text-4xl md:text-6xl font-bold text-center mb-16 text-purple-300 font-mono"
       >
         Let's Connect
       </motion.h2>
@@ -29,30 +29,29 @@ export default function ContactSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-bold mb-6 text-purple-200">
+          <h3 className="text-2xl font-bold mb-6 text-purple-200 font-mono">
             Get in touch
           </h3>
-          <p className="text-gray-200 mb-8">
-            Ready to build something amazing together? Drop me a line and let's
+          <p className="text-gray-200 mb-8 font-mono">
+            Want to build something amazing together? Drop me a line and let's
             make it happen.
           </p>
 
           <div className="flex space-x-6">
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
+              {
+                icon: Github,
+                href: "https://github.com/PURPLE-ORCA",
+                label: "GitHub",
+              },
               {
                 icon: Linkedin,
                 href: "https://linkedin.com",
                 label: "LinkedIn",
               },
               {
-                icon: Twitter,
-                href: "https://twitter.com",
-                label: "Twitter",
-              },
-              {
                 icon: Mail,
-                href: "mailto:hello@purpleorca.dev",
+                href: "medms2005@gmail.com",
                 label: "Email",
               },
             ].map((social, index) => (
@@ -73,7 +72,6 @@ export default function ContactSection() {
             ))}
           </div>
         </motion.div>
-
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ export default function ProjectsSection({ projects }) {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="text-4xl md:text-6xl font-bold text-center mb-16 text-purple-300"
+        className="text-4xl md:text-6xl font-bold text-center mb-16 text-purple-300 font-mono"
       >
         Featured Projects
       </motion.h2>
@@ -52,10 +52,10 @@ export default function ProjectsSection({ projects }) {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="p-6">
-                      <h3 className="text-xl font-bold mb-2 text-white">
+                      <h3 className="text-xl font-bold mb-2 text-white font-mono">
                         {project.title}
                       </h3>
-                      <p className="text-gray-300 mb-4">
+                      <p className="text-gray-300 mb-4 font-mono">
                         {project.description}
                       </p>
                       <div className="flex flex-wrap gap-2">
@@ -63,7 +63,7 @@ export default function ProjectsSection({ projects }) {
                           <Badge
                             key={tech}
                             variant="secondary"
-                            className="bg-purple-300/20 text-purple-200"
+                            className="bg-purple-300/20 text-purple-200 font-mono"
                           >
                             {tech}
                           </Badge>
@@ -75,7 +75,7 @@ export default function ProjectsSection({ projects }) {
               </DialogTrigger>
               <DialogContent className="bg-black/90 backdrop-blur-sm border-purple-300/20 text-white max-w-2xl">
                 <DialogHeader>
-                  <DialogTitle className="text-2xl text-purple-300">
+                  <DialogTitle className="text-2xl text-purple-300 font-mono">
                     {project.title}
                   </DialogTitle>
                 </DialogHeader>
@@ -87,13 +87,13 @@ export default function ProjectsSection({ projects }) {
                     height={400}
                     className="w-full h-64 object-cover rounded-lg"
                   />
-                  <p className="text-gray-200">{project.description}</p>
+                  <p className="text-gray-200 font-mono">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
                       <Badge
                         key={tech}
                         variant="secondary"
-                        className="bg-purple-300/20 text-purple-200"
+                        className="bg-purple-300/20 text-purple-200 font-mono"
                       >
                         {tech}
                       </Badge>

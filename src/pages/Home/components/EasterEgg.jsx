@@ -35,15 +35,15 @@ export default function EasterEgg({ showEasterEgg, setShowEasterEgg }) {
             >
               🐋
             </motion.div>
-            <h2 className="text-4xl font-bold text-purple-300 mb-4">
+            <h2 className="text-4xl font-bold text-purple-300 mb-4 font-mono">
               You found the secret!
             </h2>
-            <p className="text-xl text-gray-200">
+            <p className="text-xl text-gray-200 font-mono">
               Congrats! You discovered the hidden easter egg. <br />
               You're clearly someone who pays attention to details. <br />
               <span className="text-purple-300">I like that.</span>
             </p>
-            <p className="text-sm text-gray-400 mt-4">
+            <p className="text-sm text-gray-400 mt-4 font-mono">
               (Press Ctrl+Shift+P or click anywhere to close)
             </p>
           </div>

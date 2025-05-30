@@ -29,7 +29,7 @@ export default function AboutSection() {
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl md:text-6xl font-bold mb-8 text-purple-300">
+        <h2 className="text-4xl md:text-6xl font-bold mb-8 text-purple-300 font-mono">
           About Me
         </h2>
 
@@ -49,7 +49,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <p className="text-lg text-gray-200 mt-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg text-gray-200 mt-8 max-w-3xl mx-auto leading-relaxed font-mono">
           I'm a 19 years old passionate junior full-stack developer who loves crafting digital
           experiences. When I'm not coding, you'll find me
           exploring new technologies, contributing to open source, or probably

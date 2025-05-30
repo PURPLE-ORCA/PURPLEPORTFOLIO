@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { useRef, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Icon } from "@iconify/react"
-import { Card } from "../../../components/ui/card"
+import { useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Icon } from "@iconify/react";
+import { Card } from "../../../components/ui/card";
 
 export default function EnhancedSkillsSection() {
-  const [hoveredSkill, setHoveredSkill] = useState(null)
-  const containerRef = useRef(null)
+  const [hoveredSkill, setHoveredSkill] = useState(null);
+  const containerRef = useRef(null);
 
   const skillsData = [
     // Frontend Core
@@ -138,7 +138,14 @@ export default function EnhancedSkillsSection() {
       level: "expert",
       x: 55,
       y: 70,
-      connections: ["php", "inertia", "tailwind", "postgresql", "composer", "api"],
+      connections: [
+        "php",
+        "inertia",
+        "tailwind",
+        "postgresql",
+        "composer",
+        "api",
+      ],
       color: "rgb(255, 45, 32)",
       description: "Elegant PHP web framework",
       yearsOfExperience: 3,
@@ -303,44 +310,44 @@ export default function EnhancedSkillsSection() {
       description: "Collaborative design tool",
       yearsOfExperience: 2,
     },
-  ]
+  ];
 
   const getLevelColor = (level) => {
     switch (level) {
       case "expert":
-        return "from-emerald-400 via-green-500 to-emerald-600"
+        return "from-emerald-400 via-green-500 to-emerald-600";
       case "advanced":
-        return "from-blue-400 via-cyan-500 to-blue-600"
+        return "from-blue-400 via-cyan-500 to-blue-600";
       case "intermediate":
-        return "from-orange-400 via-amber-500 to-orange-600"
+        return "from-orange-400 via-amber-500 to-orange-600";
       default:
-        return "from-gray-400 via-gray-500 to-gray-600"
+        return "from-gray-400 via-gray-500 to-gray-600";
     }
-  }
+  };
 
   const getLevelSize = (level) => {
     switch (level) {
       case "expert":
-        return "w-24 h-24"
+        return "w-24 h-24";
       case "advanced":
-        return "w-20 h-20"
+        return "w-20 h-20";
       case "intermediate":
-        return "w-16 h-16"
+        return "w-16 h-16";
       default:
-        return "w-14 h-14"
+        return "w-14 h-14";
     }
-  }
+  };
 
   const getConnectedSkills = (skillId) => {
-    const skill = skillsData.find((s) => s.id === skillId)
-    return skill ? skill.connections : []
-  }
+    const skill = skillsData.find((s) => s.id === skillId);
+    return skill ? skill.connections : [];
+  };
 
   const isSkillHighlighted = (skillId) => {
-    if (!hoveredSkill) return true
-    if (skillId === hoveredSkill) return true
-    return getConnectedSkills(hoveredSkill).includes(skillId)
-  }
+    if (!hoveredSkill) return true;
+    if (skillId === hoveredSkill) return true;
+    return getConnectedSkills(hoveredSkill).includes(skillId);
+  };
 
   return (
     <section className="py-24 px-4 bg-black/20 backdrop-blur-sm relative overflow-hidden min-h-screen">
@@ -393,7 +400,7 @@ export default function EnhancedSkillsSection() {
             transition={{ duration: 1, delay: 0.2 }}
             className="inline-block"
           >
-            <h2 className="text-7xl md:text-7xl font-black bg-gradient-to-r from-white via-cyan-200 to-purple-300 bg-clip-text text-transparent relative">
+            <h2 className="text-7xl md:text-7xl font-black bg-gradient-to-r from-white via-cyan-200 to-purple-300 bg-clip-text text-transparent relative font-mono">
               My Tech Universe
               <motion.div
                 className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"
@@ -565,14 +572,14 @@ export default function EnhancedSkillsSection() {
                           className="absolute -top-20 left-1/2 transform -translate-x-1/2 bg-slate-800/95 backdrop-blur-sm border border-slate-600 rounded-lg p-4 min-w-[200px] z-50 shadow-2xl"
                         >
                           <div className="text-center">
-                            <h4 className="font-bold text-white mb-1">
+                            <h4 className="font-bold text-white mb-1 font-mono">
                               {skill.name}
                             </h4>
-                            <p className="text-sm text-slate-300 mb-2">
+                            <p className="text-sm text-slate-300 mb-2 font-mono">
                               {skill.description}
                             </p>
                             {skill.yearsOfExperience && (
-                              <div className="text-xs text-slate-400">
+                              <div className="text-xs text-slate-400 font-mono">
                                 {skill.yearsOfExperience} years experience
                               </div>
                             )}
@@ -603,7 +610,7 @@ export default function EnhancedSkillsSection() {
               transition={{ duration: 0.6 }}
               className="mb-6"
             >
-              <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center gap-3">
+              <h3 className="text-3xl font-bold text-white mb-4 flex items-center justify-center gap-3 font-mono">
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{
@@ -643,7 +650,7 @@ export default function EnhancedSkillsSection() {
                     icon={tech.icon}
                     className="w-8 h-8 group-hover:scale-110 transition-transform duration-300"
                   />
-                  <span className="text-lg font-medium text-slate-200">
+                  <span className="text-lg font-medium text-slate-200 font-mono">
                     {tech.name}
                   </span>
                   <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse" />
@@ -655,10 +662,9 @@ export default function EnhancedSkillsSection() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="text-slate-400 text-lg"
+              className="text-slate-400 text-lg font-mono"
             >
-              Always learning, always growing. The journey of a developer never
-              ends.
+              Always learning, always growing.
             </motion.p>
           </Card>
         </motion.div>

@@ -13,7 +13,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent"
+          className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent font-mono"
         >
           Purple Orca
         </motion.h1>
@@ -22,9 +22,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-xl md:text-2xl mb-8 text-gray-200"
+          className="text-xl md:text-2xl mb-8 text-gray-200 font-mono"
         >
-          Talk less, build more
+          Talk less, Build more
         </motion.p>
 
         <motion.div
