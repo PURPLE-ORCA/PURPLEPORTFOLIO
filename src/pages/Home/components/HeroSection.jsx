@@ -15,7 +15,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.2 }}
           className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-transparent font-mono"
         >
-          Purple Orca
+          EL MOUSSAOUI MOHAMMED
         </motion.h1>
 
         <motion.p

@@ -23,7 +23,7 @@ export default function ProjectsSection({ projects }) {
         viewport={{ once: true }}
         className="text-4xl md:text-6xl font-bold text-center mb-16 text-purple-300 font-mono"
       >
-        Featured Projects
+        What I've Built
       </motion.h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
