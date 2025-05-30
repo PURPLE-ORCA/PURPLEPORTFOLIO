@@ -621,7 +621,7 @@ export default function EnhancedSkillsSection() {
                 >
                   <Icon icon="mdi:school" className="w-8 h-8 text-yellow-400" />
                 </motion.div>
-                Currently Expanding My Arsenal
+                Currently Exploring New Planets
               </h3>
             </motion.div>
 
@@ -631,11 +631,6 @@ export default function EnhancedSkillsSection() {
                   name: "Next.js",
                   icon: "logos:nextjs-icon",
                   color: "rgb(0, 0, 0)",
-                },
-                {
-                  name: "Svelte",
-                  icon: "logos:svelte-icon",
-                  color: "rgb(255, 62, 0)",
                 },
               ].map((tech, index) => (
                 <motion.div

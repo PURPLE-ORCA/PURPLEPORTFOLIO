@@ -46,7 +46,7 @@ export default function ContactSection() {
               },
               {
                 icon: Linkedin,
-                href: "https://linkedin.com",
+                href: "https://www.linkedin.com/in/mohammed-el-moussaoui",
                 label: "LinkedIn",
               },
               {

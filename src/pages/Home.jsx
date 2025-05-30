@@ -71,14 +71,14 @@ export default function Home() {
   ];
 
   const stats = [
-    {
-      label: "Projects Built",
-      value: 42,
-      icon: "mdi:code-braces",
-    },
-    { label: "GitHub Commits", value: 1337, icon: "logos:github-icon" },
-    { label: "Coffee Consumed", value: 999, icon: "mdi:coffee" },
-    { label: "Hours Coding", value: 5000, icon: "mdi:flash" },
+    // {
+    //   label: "Projects Built",
+    //   value: 15,
+    //   icon: "mdi:code-braces",
+    // },
+    // { label: "GitHub Commits", value: 1337, icon: "logos:github-icon" },
+    // { label: "Coffee Consumed", value: 999, icon: "mdi:coffee" },
+    // { label: "Hours Coding", value: 5000, icon: "mdi:flash" },
   ];
 
   return (
