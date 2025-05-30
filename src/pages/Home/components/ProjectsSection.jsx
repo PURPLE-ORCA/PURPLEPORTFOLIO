@@ -13,7 +13,6 @@ import {
 import { Github, ExternalLink } from "lucide-react";
 
 export default function ProjectsSection({ projects }) {
-  const [selectedProject, setSelectedProject] = useState(null);
 
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto">
@@ -73,7 +72,13 @@ export default function ProjectsSection({ projects }) {
                   </CardContent>
                 </Card>
               </DialogTrigger>
-              <DialogContent className="bg-black/90 backdrop-blur-sm border-purple-300/20 text-white max-w-2xl">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.2 }}
+              >
+                <DialogContent className="bg-black/90 backdrop-blur-sm border-purple-300/20 text-white max-w-2xl">
                 <DialogHeader>
                   <DialogTitle className="text-2xl text-purple-300 font-mono">
                     {project.title}
@@ -113,23 +118,10 @@ export default function ProjectsSection({ projects }) {
                         GitHub
                       </a>
                     </Button>
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="border-purple-300 text-purple-300 hover:bg-purple-600 hover:text-white"
-                    >
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
-                      </a>
-                    </Button>
                   </div>
                 </div>
               </DialogContent>
+              </motion.div>
             </Dialog>
           </motion.div>
         ))}

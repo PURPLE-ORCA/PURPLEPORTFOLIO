@@ -42,44 +42,47 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      title: "AI-Powered Dashboard",
+      title: "PURPLE SECTOR",
       description:
-        "Modern analytics dashboard with real-time data visualization",
-      tech: ["React", "Node.js", "PostgreSQL"],
-      image: "/placeholder.svg?height=300&width=500",
-      github: "https://github.com",
-      demo: "https://demo.com",
+        "An app to Cut through the F1 scheduling. Deliver clear, accurate race weekend timings (especially for GMT+1 sufferers), standings, and essential info without the user needing a degree in astrophysics and a world clock. ",
+      tech: ["React", "Node.js", "Express"],
+      image: "public/images/projectsimg/purplesector.png",
+      github: "https://github.com/PURPLE-ORCA/PURPLESECTOR.git",
+      // demo: "https://demo.com",
     },
     {
       id: 2,
-      title: "E-commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration",
-      tech: ["Next.js", "Stripe", "MongoDB"],
+      title: "PROFS2EXAMS",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      tech: ["Laravel", "React", "postgreSQL"],
       image: "/placeholder.svg?height=300&width=500",
-      github: "https://github.com",
+      github: "https://github.com/PURPLE-ORCA/PROFS2EXAMS.git",
       demo: "https://demo.com",
     },
     {
       id: 3,
-      title: "Social Media App",
-      description: "Real-time social platform with chat and media sharing",
-      tech: ["React Native", "Firebase", "WebRTC"],
+      title: "WEMILIA",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      tech: ["Laravel", "React", "postgreSQL"],
       image: "/placeholder.svg?height=300&width=500",
-      github: "https://github.com",
+      github: "https://github.com/PURPLE-ORCA/WEMILIA.git",
+      demo: "https://demo.com",
+    },
+    {
+      id: 4,
+      title: "FSJESCTRL",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      tech: ["Laravel", "React", "postgreSQL"],
+      image: "/placeholder.svg?height=300&width=500",
+      github: "https://github.com/PURPLE-ORCA/FSJESCTRL.git",
       demo: "https://demo.com",
     },
   ];
 
-  const stats = [
-    // {
-    //   label: "Projects Built",
-    //   value: 15,
-    //   icon: "mdi:code-braces",
-    // },
-    // { label: "GitHub Commits", value: 1337, icon: "logos:github-icon" },
-    // { label: "Coffee Consumed", value: 999, icon: "mdi:coffee" },
-    // { label: "Hours Coding", value: 5000, icon: "mdi:flash" },
-  ];
+
 
   return (
     <div className="min-h-screen relative overflow-x-hidden">
@@ -102,7 +105,7 @@ export default function Home() {
         <ProjectsSection projects={projects} />
 
         {/* Stats Section */}
-        <StatsSection stats={stats} />
+        <StatsSection />
 
         {/* Contact Section */}
         <ContactSection />
