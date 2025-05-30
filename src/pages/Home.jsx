@@ -13,31 +13,31 @@ import Footer from "./Home/components/Footer";
 export default function Home() {
   const [showEasterEgg, setShowEasterEgg] = useState(false);
 
-  const skills = {
-    Frontend: [
-      { name: "React", icon: "logos:react" },
-      { name: "Javascript", icon: "material-icon-theme:javascript" },
-      { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
-      { name: "Framer Motion", icon: "tabler:brand-framer-motion" },
-    ],
-    Backend: [
-      { name: "Node.js", icon: "logos:nodejs-icon" },
-      { name: "Node.js", icon: "logos:nodejs-icon" },
-      { name: "Python", icon: "logos:python" },
-      { name: "PostgreSQL", icon: "logos:postgresql" },
-      { name: "Express", icon: "logos:express" },
-      { name: "FastAPI", icon: "logos:fastapi-icon" },
-    ],
-    Tools: [
-      { name: "Git", icon: "logos:git-icon" },
-      { name: "Docker", icon: "logos:docker-icon" },
-      { name: "AWS", icon: "logos:aws" },
-      { name: "Vercel", icon: "logos:vercel-icon" },
-      { name: "Figma", icon: "logos:figma" },
-      { name: "VS Code", icon: "logos:visual-studio-code" },
-      { name: "Webpack", icon: "logos:webpack" },
-    ],
-  };
+  // const skills = {
+  //   Frontend: [
+  //     { name: "React", icon: "logos:react" },
+  //     { name: "Javascript", icon: "material-icon-theme:javascript" },
+  //     { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
+  //     { name: "Framer Motion", icon: "tabler:brand-framer-motion" },
+  //   ],
+  //   Backend: [
+  //     { name: "Node.js", icon: "logos:nodejs-icon" },
+  //     { name: "Node.js", icon: "logos:nodejs-icon" },
+  //     { name: "Python", icon: "logos:python" },
+  //     { name: "PostgreSQL", icon: "logos:postgresql" },
+  //     { name: "Express", icon: "logos:express" },
+  //     { name: "FastAPI", icon: "logos:fastapi-icon" },
+  //   ],
+  //   Tools: [
+  //     { name: "Git", icon: "logos:git-icon" },
+  //     { name: "Docker", icon: "logos:docker-icon" },
+  //     { name: "AWS", icon: "logos:aws" },
+  //     { name: "Vercel", icon: "logos:vercel-icon" },
+  //     { name: "Figma", icon: "logos:figma" },
+  //     { name: "VS Code", icon: "logos:visual-studio-code" },
+  //     { name: "Webpack", icon: "logos:webpack" },
+  //   ],
+  // };
 
   const projects = [
     {
@@ -95,7 +95,8 @@ export default function Home() {
         <AboutSection />
 
         {/* Skills Section */}
-        <SkillsSection skills={skills} />
+        <SkillsSection
+         />
 
         {/* Projects Section */}
         <ProjectsSection projects={projects} />

@@ -5,7 +5,7 @@ export default function AboutSection() {
   const [typewriterText, setTypewriterText] = useState("");
 
   const fullText =
-    "const purpleOrca = { role: 'Full Stack Developer', passion: 'Building dope stuff', status: 'Available for hire' };";
+    "const purpleOrca = { role: 'Full Stack Developer', passion: 'Building stuff', status: 'Available for hire' };";
 
   useEffect(() => {
     let i = 0;
@@ -40,7 +40,7 @@ export default function AboutSection() {
               <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
               <div className="w-3 h-3 bg-green-500 rounded-full"></div>
             </div>
-            <span className="ml-4 text-gray-400">terminal.js</span>
+            <span className="ml-4 text-gray-400">orca.js</span>
           </div>
           <div className="text-purple-300">
             {"> "}
@@ -50,10 +50,10 @@ export default function AboutSection() {
         </div>
 
         <p className="text-lg text-gray-200 mt-8 max-w-3xl mx-auto leading-relaxed">
-          I'm a passionate full-stack developer who loves crafting digital
-          experiences that don't suck. When I'm not coding, you'll find me
+          I'm a 19 years old passionate junior full-stack developer who loves crafting digital
+          experiences. When I'm not coding, you'll find me
           exploring new technologies, contributing to open source, or probably
-          drinking way too much coffee.
+          slepping.
         </p>
       </motion.div>
     </section>
