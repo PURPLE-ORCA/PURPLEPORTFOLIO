@@ -1,0 +1,141 @@
+# General Developer Rules (Universal Edition)
+
+  
+
+## Security Practices
+
+- Always validate and sanitize user inputs on both client and server sides.
+
+- Never trust user-provided data (headers, query params, body, etc.).
+
+- Use environment variables for sensitive config (no hard-coded secrets, ever).
+
+- Escape/encode dynamic outputs to prevent XSS/SQLi/command injection.
+
+- Enforce HTTPS and secure cookies when applicable.
+
+  
+
+## Code Structure & Reusability
+
+- Break down complex UIs/APIs into modular, reusable units.
+
+- Extract repeated patterns into shared components, utilities, or libraries.
+
+- Follow MVC or equivalent patterns (e.g., Controllers, Services) where applicable.
+
+- Keep files **under 200 lines** unless there’s a damn good reason.
+
+- Favor declarative over imperative code (e.g., map/filter over for-loops).
+
+- Avoid over-engineering; pick the simplest, clearest solution that works.
+
+  
+
+## Clean Code Practices
+
+- Use **camelCase** for variables, functions, and properties.
+
+- Use **PascalCase** for classes and React/Vue components.
+
+- Prefer explicit naming (`getUserProfile()` over `gUP()`).
+
+- Consistent indentation (tabs over spaces, or spaces over tabs, but pick one).
+
+- Avoid deep nesting (max 3 levels of indentation).
+
+- Minimal comments; only where necessary to clarify intent.
+
+- No console.logs in production—use proper logging.
+
+  
+
+## Styling & Design (Frontend)
+
+- Use Tailwind or a modern CSS framework by default.
+
+- Always provide dark mode support where UX makes sense.
+
+- Use **design tokens** or CSS variables for theming.
+
+- Maintain accessibility standards: ARIA, alt tags, focus handling.
+
+- Limit component-specific CSS; favor utility classes or CSS-in-JS solutions.
+
+  
+
+## State Management
+
+- Use local component state or context APIs before reaching for Redux or MobX.
+
+- Avoid unnecessary state complexity—favor server state when using tools like Supabase, Firebase, etc.
+
+- Centralize state only if multiple parts of the app depend on it.
+
+  
+
+## Testing Practices
+
+- Use **unit tests** for core logic and business rules.
+
+- **Integration tests** for routes, controllers, APIs.
+
+- Prefer mocking external services (e.g., Supabase, Firebase) in tests.
+
+- For fullstack apps, use a mix of Jest/Pest/pytest depending on stack.
+
+  
+
+## Deployment & Performance
+
+- Use environment-based config (dev/staging/prod) for deploys.
+
+- Compress assets, lazy-load where applicable.
+
+- Optimize DB queries; avoid N+1 problems.
+
+- Monitor error logs and performance metrics post-deploy.
+
+  
+
+## SEO & Accessibility
+
+- Use semantic HTML with meaningful tags and headings.
+
+- Prioritize Core Web Vitals: LCP, FID, CLS.
+
+- Accessible design: color contrast, screen reader support, keyboard nav.
+
+- Use canonical URLs and proper meta tags for SEO.
+
+  
+
+## Dependencies & Tools
+
+- Keep dependencies lean; remove unused ones periodically.
+
+- Update major libraries/frameworks every 3–6 months.
+
+- Avoid legacy libraries unless unavoidable (jQuery—only if held at gunpoint).
+
+- Use modern bundlers: Vite, Webpack, or ESBuild.
+
+  
+
+## AI Assistant Instructions
+
+- Follow these rules as **non-negotiable guidelines**.
+
+- Prioritize reusability, readability, and security in every solution.
+
+- Avoid premature optimization unless performance bottlenecks are clear.
+
+- Challenge defaults if a better approach exists.
+
+  
+
+## Branding & Color
+
+- Main color (optional): **#2f024f** (Purple). Accent: Black.
+
+- Keep branding consistent across projects unless overridden by client/brand guidelines.
