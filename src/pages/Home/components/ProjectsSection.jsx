@@ -42,7 +42,7 @@ export default function ProjectsSection({ projects }) {
                   <CardContent className="p-0">
                     <div className="relative overflow-hidden">
                       <img
-                        src={project.image || "/placeholder.svg"}
+                        src={project.image || "/images/falbackimg.jpg"}
                         alt={project.title}
                         width={500}
                         height={300}
@@ -86,7 +86,7 @@ export default function ProjectsSection({ projects }) {
                 </DialogHeader>
                 <div className="space-y-4">
                   <img
-                    src={project.image || "/placeholder.svg"}
+                    src={project.image || "/images/falbackimg.jpg"}
                     alt={project.title}
                     width={600}
                     height={400}

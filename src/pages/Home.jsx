@@ -46,9 +46,8 @@ export default function Home() {
       description:
         "An app to Cut through the F1 scheduling. Deliver clear, accurate race weekend timings (especially for GMT+1 sufferers), standings, and essential info without the user needing a degree in astrophysics and a world clock. ",
       tech: ["React", "Node.js", "Express"],
-      image: "public/images/projectsimg/purplesector.png",
+      image: "images/projectsimg/purplesector.png",
       github: "https://github.com/PURPLE-ORCA/PURPLESECTOR.git",
-      // demo: "https://demo.com",
     },
     {
       id: 2,
@@ -56,9 +55,8 @@ export default function Home() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       tech: ["Laravel", "React", "postgreSQL"],
-      image: "/placeholder.svg?height=300&width=500",
+      // image: "images/projectsimg/profs2exams.png",
       github: "https://github.com/PURPLE-ORCA/PROFS2EXAMS.git",
-      demo: "https://demo.com",
     },
     {
       id: 3,
@@ -66,9 +64,8 @@ export default function Home() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       tech: ["Laravel", "React", "postgreSQL"],
-      image: "/placeholder.svg?height=300&width=500",
+      // image: "images/projectsimg/wemilia.png",
       github: "https://github.com/PURPLE-ORCA/WEMILIA.git",
-      demo: "https://demo.com",
     },
     {
       id: 4,
@@ -76,9 +73,8 @@ export default function Home() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       tech: ["Laravel", "React", "postgreSQL"],
-      image: "/placeholder.svg?height=300&width=500",
+      // image: "images/projectsimg/fsjesctrl.png",
       github: "https://github.com/PURPLE-ORCA/FSJESCTRL.git",
-      demo: "https://demo.com",
     },
   ];
 
@@ -98,8 +94,7 @@ export default function Home() {
         <AboutSection />
 
         {/* Skills Section */}
-        <SkillsSection
-         />
+        <SkillsSection />
 
         {/* Projects Section */}
         <ProjectsSection projects={projects} />

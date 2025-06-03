@@ -19,14 +19,18 @@ export default function EnhancedSkillsSection() {
 
       const scrollDistance = contentWidth / 2;
 
+      // Ensure the carousel starts from the beginning before animating
+      x.set(0);
+
+      // Start the autoplay animation
       controls.start({
-        x: -scrollDistance,
+        x: -scrollDistance, // Animate to half the content width for seamless looping
         transition: {
           x: {
-            duration: 40,
-            ease: "linear",
-            repeat: Infinity,
-            repeatType: "loop",
+            duration: 40, // Duration of one full scroll
+            ease: "linear", // Linear speed for continuous motion
+            repeat: Infinity, // Loop indefinitely
+            repeatType: "loop", // Seamless loop by resetting to start after each cycle
           },
         },
       });
@@ -206,7 +210,7 @@ export default function EnhancedSkillsSection() {
                 >
                   <Icon icon="mdi:school" className="w-8 h-8 text-yellow-400" />
                 </motion.div>
-                Currently Exploring New Planets
+                Currently Exploring New Technologies
               </h3>
             </motion.div>
 
