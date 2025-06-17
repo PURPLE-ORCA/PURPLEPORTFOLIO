@@ -114,17 +114,8 @@ export default function EnhancedSkillsSection() {
             transition={{ duration: 1, delay: 0.2 }}
             className="inline-block"
           >
-            <h2 className="text-7xl md:text-7xl font-black bg-gradient-to-r from-white via-cyan-200 to-purple-300 bg-clip-text text-transparent relative font-mono">
-              My Tech Universe
-              <motion.div
-                className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"
-                animate={{ rotate: 360 }}
-                transition={{
-                  duration: 20,
-                  repeat: Number.POSITIVE_INFINITY,
-                  ease: "linear",
-                }}
-              />
+            <h2 className="text-7xl md:text-7xl font-black text-purple-300 relative font-mono">
+              My Tech Arsenal
             </h2>
           </motion.div>
         </motion.div>
@@ -220,7 +211,12 @@ export default function EnhancedSkillsSection() {
                   name: "Typescript",
                   icon: "devicon:typescript",
                   color: "rgb(0, 0, 0)",
-                },                
+                },
+                {
+                  name: "Next js",
+                  icon: "devicon:nextjs",
+                  color: "rgb(0, 0, 0)",
+                },
               ].map((tech, index) => (
                 <motion.div
                   key={tech.name}
